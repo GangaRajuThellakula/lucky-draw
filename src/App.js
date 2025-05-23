@@ -1,38 +1,23 @@
-import { AboutUs } from './AboutUs';
-import { Member } from './Member';
+import { AboutUs } from './components/AboutUs/AboutUs';
+import { Member } from './components/Member/Member';
+import Header from './components/Header/Header';
 import "./App.css";
+import MemberList from './components/MembersList/MemberList';
+import Loader from './components/Loader/Loader';
 // import "./Member.css";
 function App() {
-  const people=[
-    {name:"Ravi",city:"Hyderabad"},
-    {name:"Ramu",city:"Kkd"},
-    {name:"Nani",city:"Ban"},
-    {name:"Lakshmi",city:"kkd"},
-    {name:"Devi",city:"chennai"},
-    {name:"Syam",city:"Ban"},
-    {name:"Ravi",city:"kkd"},
-    {name:"Garal",city:"chennai"},
-    {name:"Lakshmi",city:"kkd"},
-    {name:"Devi",city:"chennai"},
-    {name:"Syam",city:"Ban"},
-    {name:"Ravi",city:"kkd"},
-    {name:"Garal",city:"chennai"},
-    {name:"Ravi",city:"Hyderabad"},
-    {name:"Ramu",city:"Kkd"},
-    {name:"Nani",city:"Ban"},
-    {name:"Lakshmi",city:"kkd"},
-  ];
+
   return (
     <div>
+      <Header/>
+      <div className="Alignment">
+      <MemberList/>
       <AboutUs/>
-      <div className="members-container">
-        {people.map(function(member){
-         return  <Member name ={member.name} city={member.city}/>
-        })}
-       {/* <Member name ="Ravi" city="Hyderabad"/>
-        <Member name="Syam" city="mumbai"/> */}
+     
+     
+
         </div>
-        
+
     </div>
   );
 }

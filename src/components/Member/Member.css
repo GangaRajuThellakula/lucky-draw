@@ -1,0 +1,9 @@
+.Members{
+    /* margin:20px; */
+    padding:20px;
+    background-color:rgba(255, 170, 0, 0.998);
+    width: 200px;
+    color: azure;
+    flex-wrap: wrap;
+
+}

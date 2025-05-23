@@ -1,0 +1,17 @@
+.members-container {
+    display:flex;  
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    height:400px;
+    overflow:scroll;
+  }
+  
+.p ,.l{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin:20px;
+    color: red;
+    font-size: 50px;
+}

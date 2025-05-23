@@ -1,6 +1,8 @@
-.members-container {
-  display:flex;  
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+
+
+.Alignment{
+  margin: 0 50px 0 50px;
+  height:1000px;
+  overflow:scroll;
 }
+
